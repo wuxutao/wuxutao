@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>百度地图加载问题 · GitBook</title>
+        <title>百度地图加载问题 · 博客</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,7 +17,31 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ad/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
                 
             
                 
@@ -71,7 +95,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="輸入並搜尋" />
 </div>
 
             
@@ -288,7 +312,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本書使用 GitBook 釋出
         </a>
     </li>
 </ul>
@@ -328,13 +352,15 @@
                                 
                                 <h1 id="&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x52A0;&#x8F7D;&#x95EE;&#x9898;">&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x52A0;&#x8F7D;&#x95EE;&#x9898;</h1>
 <h4 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h4>
-<p>&#x7528;create-creat-app&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5728;index.html&#x4E2D;&#x5F15;&#x5165;baidu map&#xFF1A;<a href="http://api.map.baidu.com/getscript?v=2.0&amp;ak=iVuZxPQ8Ub2Oqc24fGLUsLEOTVUonY" target="_blank">http://api.map.baidu.com/getscript?v=2.0&amp;ak=iVuZxPQ8Ub2Oqc24fGLUsLEOTVUonY</a>, &#x51FA;&#x73B0;&#x95EE;&#x9898; chrome&#x4E0D;&#x663E;&#x793A;&#x767E;&#x5EA6;&#x5730;&#x56FE;&#xFF0C;&#x5E76;&#x4E14;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#xFF1A;A Parser-blocking, cross-origin script, is invoked via document.write. </p>
+<p>&#x7528;create-creat-app&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5728;index.html&#x4E2D;&#x5F15;&#x5165;baidu map&#xFF1A;</p>
+<pre class="language-"><code>http://api.map.baidu.com/getscript?v=2.0&amp;ak=iVuZxPQ8Ub2Oqc24fGLUsLEOTVUonY,
+</code></pre><p>&#x51FA;&#x73B0;&#x95EE;&#x9898; chrome&#x4E0D;&#x663E;&#x793A;&#x767E;&#x5EA6;&#x5730;&#x56FE;&#xFF0C;&#x5E76;&#x4E14;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#xFF1A;A Parser-blocking, cross-origin script, is invoked via document.write. </p>
 <h4 id="&#x539F;&#x56E0;">&#x539F;&#x56E0;</h4>
 <p>&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x52A0;&#x8F7D;&#x6709;&#x4E2A;&#x4E2D;&#x95F4;&#x6B65;&#x9AA4;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;url&#xFF0C;&#x4E2D;&#x95F4;&#x4F7F;&#x7528;&#x4E86;document.write&#x65B9;&#x6CD5;&#xFF1B;&#x800C;chrome&#x6E32;&#x67D3;&#x540E;&#x4E0D;&#x5141;&#x8BB8;write&#x65B9;&#x6CD5;</p>
 <h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
-<p>&#x628A;&#x5F15;&#x5165;&#x7684;url&#x6539;&#x6210;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;:
-  src=&quot;<a href="http://api.map.baidu.com/getscript?v=2.0&amp;ak=iVuZxPQ8Ub2Oqc24fGLUsLEOTVUonY1d&amp;services=&amp;t=20170725120922&quot;&gt;" target="_blank">http://api.map.baidu.com/getscript?v=2.0&amp;ak=iVuZxPQ8Ub2Oqc24fGLUsLEOTVUonY1d&amp;services=&amp;t=20170725120922&quot;&gt;</a></p>
-
+<p>&#x628A;&#x5F15;&#x5165;&#x7684;url&#x6539;&#x6210;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;:</p>
+<pre class="language-"><code>  src=&quot;http://api.map.baidu.com/getscript?v=2.0&amp;ak=iVuZxPQ8Ub2Oqc24fGLUsLEOTVUonY1d&amp;services=&amp;t=20170725120922&quot;&gt;
+</code></pre>
                                 
                                 </section>
                             
@@ -377,7 +403,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"百度地图加载问题","level":"1.4.1.1","depth":3,"next":{"title":"app","level":"1.5","depth":1,"path":"app/README.md","ref":"app/README.md","articles":[{"title":"react native","level":"1.5.1","depth":2,"path":"app/reactnative/README.md","ref":"app/reactnative/README.md","articles":[]}]},"previous":{"title":"react","level":"1.4.1","depth":2,"path":"web/react/README.md","ref":"web/react/README.md","articles":[{"title":"百度地图加载问题","level":"1.4.1.1","depth":3,"path":"web/react/baidumap.md","ref":"web/react/baidumap.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"web/react/baidumap.md","mtime":"2017-07-25T15:16:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-25T12:24:46.009Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"百度地图加载问题","level":"1.4.1.1","depth":3,"next":{"title":"app","level":"1.5","depth":1,"path":"app/README.md","ref":"app/README.md","articles":[{"title":"react native","level":"1.5.1","depth":2,"path":"app/reactnative/README.md","ref":"app/reactnative/README.md","articles":[]}]},"previous":{"title":"react","level":"1.4.1","depth":2,"path":"web/react/README.md","ref":"web/react/README.md","articles":[{"title":"百度地图加载问题","level":"1.4.1.1","depth":3,"path":"web/react/baidumap.md","ref":"web/react/baidumap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ad","prism","-highlight","baidu","splitter","sitemap","atoc","sectionx","disqus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"useIdentifier":false,"shortName":"wuxutao-github-io"},"ad":{"contentBottom":"©GruNG","contentTop":"<div><a href='http://www.dongwu-inc.com/'>东吴科技</a>最优秀的开发公司</div>"},"livereload":{},"atoc":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"your duoshuo's shortname","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"sitemap":{"hostname":"http://wuxutao.github.io/"},"baidu":{"token":"ec3d5d57c721bf4b5ddb93c64cf460d2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博客","language":"zh","gitbook":"*","description":"技术博客"},"file":{"path":"web/react/baidumap.md","mtime":"2017-07-26T03:56:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T11:39:08.139Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -385,6 +411,38 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ad/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
